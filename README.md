@@ -16,6 +16,7 @@ Define the ant config inside the asbild.config.xml:
 ## Run Ant
 ![Diagram](images/runant.png)
 
+* The ant script 'asbuild.unittest.xml' is used to execute the junit test. 
 
 ## Requirements
 Actifsource Workbench Enterprise Edition
