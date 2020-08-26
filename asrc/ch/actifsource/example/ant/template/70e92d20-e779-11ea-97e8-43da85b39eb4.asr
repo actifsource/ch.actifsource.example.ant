@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="70e92d20-e779-11ea-97e8-43da85b39eb4">
+  <owns predicate="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <resource statement-guid="7b214c18-e779-11ea-97e8-43da85b39eb4" type="resource" guid="7b212505-e779-11ea-97e8-43da85b39eb4" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="70e95432-e779-11ea-97e8-43da85b39eb4" type="resource" guid="7b665745-d469-11da-8f5e-0f17beaa2c29" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="70e9c963-e779-11ea-97e8-43da85b39eb4" type="literal">TestBuildConfig</object>
+  </predicate>
+  <predicate guid="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <object statement-guid="7b214c18-e779-11ea-97e8-43da85b39eb4">
+      <resource guid="7b212505-e779-11ea-97e8-43da85b39eb4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7b212506-e779-11ea-97e8-43da85b39eb4" type="resource" guid="11b444f7-dc94-11dd-8de2-bb051d76fa6e" />
+        </predicate>
+        <predicate guid="f251d91b-d8d4-11de-85c5-f93550bd5ed1">
+          <object statement-guid="7b212507-e779-11ea-97e8-43da85b39eb4" type="resource" guid="7afdbe24-e779-11ea-97e8-43da85b39eb4" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

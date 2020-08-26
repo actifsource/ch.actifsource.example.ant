@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="ch.actifsource.example.ant">
+
+	<import file="asbuild.compile.xml" />
+
+	<target name="junit" >
+		<delete dir="${junit.test.report}" />
+		<mkdir dir="${junit.test.report}" />
+		<junit showoutput="true" printsummary="on" fork="false" haltonfailure="false">
+				
+			<sysproperty key="ch.actifsource.ui.junit.projectDirURL" value="file:/${ant.workspace}"/>
+			<sysproperty key="ch.actifsource.ui.junit.workspaceProjectFiles" value="${ant.project}"/>
+			<sysproperty key="ch.actifsource.ui.junit.workspaceRootFile" value="file:/${ant.workspace}"/>
+			<sysproperty key="ch.actifsource.ui.junit.bundleDirURL" value="file:/${bundle.directory}"/>
+				
+			<classpath refid="ch.actifsource.example.ant.classpath" />
+			<batchtest fork="false" todir="${junit.test.report}">
+				<fileset dir="${ant.project}/src">
+					<include name="**/unittest/AllTests.java" />
+				</fileset>
+			</batchtest>
+			<formatter type="xml" />
+		</junit>
+	</target>
+         
+	<target name="build" depends="ch.actifsource.example.ant.build,junit" />
+         	
+</project>
