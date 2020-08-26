@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="0354d33f-e772-11ea-8c03-8d8d4f47b011">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0354fa64-e772-11ea-8c03-8d8d4f47b011" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0354fa65-e772-11ea-8c03-8d8d4f47b011" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0354fa66-e772-11ea-8c03-8d8d4f47b011" type="literal">Child</object>
+  </predicate>
+</resource>
+

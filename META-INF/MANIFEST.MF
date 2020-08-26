@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ant
+Bundle-SymbolicName: ch.actifsource.example.ant
+Bundle-Version: 1.0.0.qualifier
+Export-Package: ch.actifsource.example.ant.unittest,
+ ch.actifsource.example.ant.unittest.generic,
+ ch.actifsource.example.ant.unittest.generic.javamodel,
+ ch.actifsource.example.ant.unittest.model,
+ ch.actifsource.example.ant.unittest.specific
+Require-Bundle: ch.actifsource.core;bundle-version="10.10.0",
+ org.junit;bundle-version="4.12.0",
+ ch.actifsource.ui.junit;bundle-version="10.10.0",
+ ch.actifsource.core.testutil;bundle-version="10.10.0",
+ ch.actifsource.testutil;bundle-version="10.10.0",
+ ch.actifsource.ui.editor;bundle-version="10.10.0"
