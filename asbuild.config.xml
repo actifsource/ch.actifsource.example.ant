@@ -31,7 +31,7 @@
 		<pathelement location="${bundle.directory}/ch.actifsource.util_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.ui.diagram_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.solution.datatype_${actifsource.version}.jar" />
-		<pathelement location="${up.workspace}/swiss.avm.up.core" />
+		
 		<pathelement location="${bundle.directory}/org.junit_4.12.0.v201504281640/junit.jar" />
 		<pathelement location="${bundle.directory}/org.hamcrest.core_1.3.0.v201303031735.jar" />
 		
@@ -56,6 +56,7 @@
 		<pathelement location="${bundle.directory}/ch.actifsource.generator_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.template_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.javamodel_${actifsource.version}.jar" />
+		<pathelement location="${bundle.directory}/ch.actifsource.transientresource_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.testutil_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.testutil_${actifsource.version}/libs/easymock-3.1.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.testutil_${actifsource.version}/libs/cglib-2.2.jar" />
