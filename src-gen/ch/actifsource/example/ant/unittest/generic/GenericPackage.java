@@ -8,6 +8,8 @@ public class GenericPackage {
   public static final Resource Root = new Resource("0354d340-e772-11ea-8c03-8d8d4f47b011");
   public static final Resource Root_child = new Resource("0354d341-e772-11ea-8c03-8d8d4f47b011");
   public static final Resource TestFunctionSpace_Root = new Resource("0354fa5d-e772-11ea-8c03-8d8d4f47b011");
+  public static final Resource Root_derivedRelationTest = new Resource("594c68e2-bec0-11eb-8077-f1c358a87645");
+  public static final Resource Root_derivedAttributeTest = new Resource("b2adbca6-bec4-11eb-a569-918f3c9a692e");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +30,4 @@ public class GenericPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,ch.actifsource.example.ant.unittest.generic,1hp20h64BCuNxH8zJ5XohaNwgW8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,ch.actifsource.example.ant.unittest.generic,IYH7Qzh4D/MHts2wVIzEZRnK+eE=] */

@@ -17,7 +17,7 @@ import ch.actifsource.ui.junit.SingleScopeTestCase;
 public class ChildTest extends SingleScopeTestCase {
 
 	public ChildTest() throws IOException {
-		super("ch.actifsource.example.ant");
+		super("ch.actifsource.example.ant", /* true = load transient resources*/ true);
 	}
 
 	@Override
@@ -49,6 +49,16 @@ public class ChildTest extends SingleScopeTestCase {
 	}
 	
 	@Test
+  public void test_derivedRelations() {
+	  assertEquals(5, Select.objectsForRelation(fSession, GenericPackage.Root_derivedRelationTest, SpecificPackage.RootInstance).size());
+	}
+	
+	@Test
+  public void test_derivedAttributes() {
+	  assertEquals(5, Select.objectsForRelation(fSession, GenericPackage.Root_derivedAttributeTest, SpecificPackage.RootInstance).size());
+  }
+	
+	@Test
 	public void test_createChild() {
 		assertEquals(5, Select.objectsForRelation(fSession, GenericPackage.Root_child, SpecificPackage.RootInstance).size());
 		
@@ -56,4 +66,5 @@ public class ChildTest extends SingleScopeTestCase {
 		Update.createAndInitializeResource(fWriteJobExecutor, rootInstancePackageResource.getPackage(), GenericPackage.Child, SpecificPackage.RootInstance, GenericPackage.Root_child, IStatementPosition.AT_END);
 		assertEquals(6, Select.objectsForRelation(fSession, GenericPackage.Root_child, SpecificPackage.RootInstance).size());
 	}
+	
 }

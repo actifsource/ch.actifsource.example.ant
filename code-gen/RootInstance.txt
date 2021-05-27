@@ -5,4 +5,18 @@ Child_3
 Child_4
 Child_5
 
-// Actifsource ID=[7b1f9e3e-e779-11ea-97e8-43da85b39eb4,0354fa5e-e772-11ea-8c03-8d8d4f47b011,34+HbWLP2ps0l4FjmVEunwtapYA=]
+// Derived Relation
+Child_1
+Child_2
+Child_3
+Child_4
+Child_5
+
+// Derived Attribute
+Child_1
+Child_2
+Child_3
+Child_4
+Child_5
+
+// Actifsource ID=[7b1f9e3e-e779-11ea-97e8-43da85b39eb4,0354fa5e-e772-11ea-8c03-8d8d4f47b011,4RiAWA4VgBRg6BfIqdvSMUMfVNw=]

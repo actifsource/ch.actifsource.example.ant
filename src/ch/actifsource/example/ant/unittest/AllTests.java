@@ -9,7 +9,7 @@ public class AllTests {
     //$JUnit-BEGIN$
     suite.addTest(ch.actifsource.example.ant.unittest.model.AllTests.suite());
     //$JUnit-END$
-    return suite;
+    return suite; 
   }
   
 }

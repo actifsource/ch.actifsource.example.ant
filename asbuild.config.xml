@@ -3,7 +3,7 @@
 	<property name="debuglevel" value="source,lines,vars" />
 	<property name="target" value="1.8" />
 	<property name="source" value="1.8" />
-	<property name="actifsource.version" value="10.10.0.202005121415" />
+	<property name="actifsource.version" value="11.0.0.202105270830" />
 	<property name="bundle.directory" value="D:\Eclipse\eclipse-rcp-oxygen-3a-win32-x86_64\eclipse\plugins" />
 	<property name="ant.workspace" value="${basedir}/.." />
 	<property name="ant.project" value="${ant.workspace}/ch.actifsource.example.ant" />
@@ -64,6 +64,7 @@
 		<pathelement location="${bundle.directory}/ch.actifsource.core.testutil_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/org.apache.commons.lang_2.6.0.v201404270220.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.codesnippet.metamodel_${actifsource.version}.jar" />
+		<pathelement location="${bundle.directory}/ch.actifsource.model.updater_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/ch.actifsource.solution.uml.statediagram_${actifsource.version}.jar" />
 		<pathelement location="${bundle.directory}/org.apache.commons.compress_1.6.0.v201310281400.jar" />
 	</path>

@@ -15,7 +15,7 @@
 	<target name="compile">
 		<echo message="${ant.project.name}: ${ant.file}" />
 		<mkdir dir="${ant.project}/bin/" />
-		<javac debug="true" debuglevel="${debuglevel}" destdir="${ant.project}/bin" includeantruntime="false" source="${source}" target="${target}">
+		<javac verbose="true" debug="true" debuglevel="${debuglevel}" destdir="${ant.project}/bin" includeantruntime="false" source="${source}" target="${target}">
 			<src path="${ant.project}/src-gen" />
 			<src path="${ant.project}/src" />
 			<classpath refid="ch.actifsource.example.ant.classpath" />
