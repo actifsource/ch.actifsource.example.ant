@@ -18,6 +18,14 @@ Define the ant config inside the asbild.config.xml:
 
 * The ant script 'asbuild.unittest.xml' is used to execute the junit test. 
 
+## Export Ant to Generate BuildConfig
+![Diagram](images/exportant2.png)
+
+![Diagram](images/exportant1.png)
+
+![Diagram](images/exportant3.png)
+
+
 ## Requirements
 Actifsource Workbench Enterprise Edition
 

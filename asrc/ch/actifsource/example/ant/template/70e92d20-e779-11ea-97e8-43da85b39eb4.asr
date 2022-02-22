@@ -21,5 +21,8 @@
       </resource>
     </object>
   </predicate>
+  <predicate guid="f2c156bb-2a93-11df-8816-4f7e5baa3710">
+    <object statement-guid="c9c2f921-900f-11ec-b0c5-2f3b8c21d47a" type="resource" guid="07283274-2a96-11df-8816-4f7e5baa3710" />
+  </predicate>
 </resource>
 
