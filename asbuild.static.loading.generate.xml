@@ -2,7 +2,7 @@
 
 <project default="build" basedir=".">
   <property name="eclipse.bundle.directory" value="${eclipse.pdebuild.home}/.." />
-  <property name="actifsource.version" value="11.2.0.202201251310" />
+  <property name="actifsource.version" value="11.4.0.202311201430" />
   <property name="actifsource.project.directory" value="D:\Eclipse\WORKBENCH\WORKBENCH_GITHUB" />
   <property name="actifsource.bundle.directory" value="D:\Eclipse\eclipse-rcp-oxygen-3a-win32-x86_64\eclipse\plugins" />
   <property name="workspaceroot" value="D:/Eclipse/WORKBENCH/WORKBENCH_GITHUB"/>
@@ -23,27 +23,27 @@
   
   <scope id="eclipseScope" location="" classpath="">
   </scope>
-  <scope id="bundle:org.eclipse.osgi" location="jar:file:/d:/Eclipse/eclipse-rcp-oxygen-3a-win32-x86_64/eclipse/plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar!/" classpath="">
-  </scope>
   <scope id="bundle:ch.actifsource.libs_external" location="${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/jug.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/logging-1.0.3.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/ant-contrib-1.0b3.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/objenesis-1.0.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/jsr305.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/xercesImpl.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/jdom.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/annotations.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/bcprov-jdk16-145.jar;file:/${actifsource.bundle.directory}/ch.actifsource.libs_external_${actifsource.version}/libs/commons-collections-3.2.1.jar">
   </scope>
-  <scope id="bundle:ch.actifsource.util" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.util_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.util_${actifsource.version}.jar">
+  <scope id="bundle:org.eclipse.osgi" location="jar:file:/d:/Eclipse/eclipse-rcp-oxygen-3a-win32-x86_64/eclipse/plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar!/" classpath="">
   </scope>
   <scope id="bundle:org.eclipse.equinox.common" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.common_3.9.0.v20170207-1454.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.common_3.9.0.v20170207-1454.jar">
   </scope>
-  <scope id="bundle:org.eclipse.equinox.registry" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.registry_3.7.0.v20170222-1344.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.registry_3.7.0.v20170222-1344.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.equinox.app" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.app_1.3.400.v20150715-1528.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.app_1.3.400.v20150715-1528.jar">
-  </scope>
   <scope id="bundle:org.eclipse.core.jobs" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.jobs_3.9.3.v20180115-1757.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.jobs_3.9.3.v20180115-1757.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.equinox.registry" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.registry_3.7.0.v20170222-1344.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.registry_3.7.0.v20170222-1344.jar">
   </scope>
   <scope id="bundle:org.eclipse.equinox.preferences" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.preferences_3.7.0.v20170126-2132.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.preferences_3.7.0.v20170126-2132.jar">
   </scope>
   <scope id="bundle:org.eclipse.core.contenttype" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.contenttype_3.6.0.v20170207-1037.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.contenttype_3.6.0.v20170207-1037.jar">
   </scope>
+  <scope id="bundle:org.eclipse.equinox.app" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.app_1.3.400.v20150715-1528.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.app_1.3.400.v20150715-1528.jar">
+  </scope>
   <scope id="bundle:javax.inject" location="jar:file:/${actifsource.bundle.directory}/javax.inject_1.0.0.v20091030.jar!/" classpath="file:/${actifsource.bundle.directory}/javax.inject_1.0.0.v20091030.jar">
   </scope>
   <scope id="bundle:org.eclipse.core.runtime" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar">
+  </scope>
+  <scope id="bundle:ch.actifsource.util" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.util_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.util_${actifsource.version}.jar">
   </scope>
   <scope id="bundle:ch.actifsource.core" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.core_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.core_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
@@ -55,11 +55,11 @@
   </scope>
   <scope id="bundle:org.eclipse.core.variables" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.variables_3.4.0.v20170113-2056.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.variables_3.4.0.v20170113-2056.jar">
   </scope>
-  <scope id="bundle:org.eclipse.core.filesystem" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.filesystem_1.7.0.v20170406-1337.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.filesystem_1.7.0.v20170406-1337.jar">
+  <scope id="bundle:org.eclipse.ant.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ant.core_3.5.0.v20170509-2149.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ant.core_3.5.0.v20170509-2149.jar">
   </scope>
   <scope id="bundle:org.eclipse.core.expressions" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.expressions_3.6.0.v20170207-1037.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.expressions_3.6.0.v20170207-1037.jar">
   </scope>
-  <scope id="bundle:org.eclipse.ant.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ant.core_3.5.0.v20170509-2149.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ant.core_3.5.0.v20170509-2149.jar">
+  <scope id="bundle:org.eclipse.core.filesystem" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.filesystem_1.7.0.v20170406-1337.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.filesystem_1.7.0.v20170406-1337.jar">
   </scope>
   <scope id="bundle:org.eclipse.core.resources" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.resources_3.12.0.v20170417-1558.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.resources_3.12.0.v20170417-1558.jar">
   </scope>
@@ -69,7 +69,15 @@
   </scope>
   <scope id="bundle:org.eclipse.text" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.text_3.6.100.v20170203-0814.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.text_3.6.100.v20170203-0814.jar">
   </scope>
-  <scope id="bundle:org.eclipse.core.filebuffers" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.filebuffers_3.6.100.v20170203-1130.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.filebuffers_3.6.100.v20170203-1130.jar">
+  <scope id="bundle:org.eclipse.compare.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.compare.core_3.6.100.v20170516-0820.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.compare.core_3.6.100.v20170516-0820.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.team.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.team.core_3.8.100.v20170516-0820.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.team.core_3.8.100.v20170516-0820.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.jdt.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.core_3.13.102.v20180330-0919.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.core_3.13.102.v20180330-0919.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.jdt.debug" location="${actifsource.bundle.directory}/org.eclipse.jdt.debug_3.11.50.v20170920-1717" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.debug_3.11.50.v20170920-1717/jdi.jar;file:/${actifsource.bundle.directory}/org.eclipse.jdt.debug_3.11.50.v20170920-1717/jdimodel.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.jdt.launching" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.launching_3.9.100.v20180323-1351.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.launching_3.9.100.v20180323-1351.jar">
   </scope>
   <scope id="bundle:org.eclipse.swt" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.swt_3.106.3.v20180329-0507.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.swt_3.106.3.v20180329-0507.jar">
   </scope>
@@ -77,31 +85,15 @@
   </scope>
   <scope id="bundle:org.eclipse.jface" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jface_3.13.2.v20171022-1656.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jface_3.13.2.v20171022-1656.jar">
   </scope>
-  <scope id="bundle:org.eclipse.jface.text" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jface.text_3.12.2.v20180112-1341.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jface.text_3.12.2.v20180112-1341.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.compare.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.compare.core_3.6.100.v20170516-0820.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.compare.core_3.6.100.v20170516-0820.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.team.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.team.core_3.8.100.v20170516-0820.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.team.core_3.8.100.v20170516-0820.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.e4.core.di.annotations" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di.annotations_1.6.0.v20170119-2002.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di.annotations_1.6.0.v20170119-2002.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.e4.core.di" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di_1.6.100.v20170421-1418.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di_1.6.100.v20170421-1418.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.core.databinding.observable" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.databinding.observable_1.6.100.v20170515-1119.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.databinding.observable_1.6.100.v20170515-1119.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.core.databinding.property" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.databinding.property_1.6.100.v20170515-1119.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.databinding.property_1.6.100.v20170515-1119.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.e4.ui.workbench3" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench3_0.14.0.v20160630-0740.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench3_0.14.0.v20160630-0740.jar">
+  <scope id="bundle:org.eclipse.help" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.help_3.8.1.v20170815-1448.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.help_3.8.1.v20170815-1448.jar">
   </scope>
   <scope id="bundle:org.eclipse.emf.common" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.emf.common_2.13.0.v20170609-0707.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.emf.common_2.13.0.v20170609-0707.jar">
   </scope>
   <scope id="bundle:org.eclipse.emf.ecore" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar">
   </scope>
-  <scope id="bundle:org.eclipse.e4.core.contexts" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.contexts_1.6.0.v20170322-1144.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.contexts_1.6.0.v20170322-1144.jar">
+  <scope id="bundle:org.w3c.css.sac" location="jar:file:/${actifsource.bundle.directory}/org.w3c.css.sac_1.3.1.v200903091627.jar!/" classpath="file:/${actifsource.bundle.directory}/org.w3c.css.sac_1.3.1.v200903091627.jar">
   </scope>
   <scope id="bundle:org.apache.batik.css" location="jar:file:/${actifsource.bundle.directory}/org.apache.batik.css_1.8.0.v20170214-1941.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.batik.css_1.8.0.v20170214-1941.jar">
-  </scope>
-  <scope id="bundle:org.w3c.css.sac" location="jar:file:/${actifsource.bundle.directory}/org.w3c.css.sac_1.3.1.v200903091627.jar!/" classpath="file:/${actifsource.bundle.directory}/org.w3c.css.sac_1.3.1.v200903091627.jar">
   </scope>
   <scope id="bundle:org.eclipse.e4.ui.css.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.css.core_0.12.101.v20170712-1547.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.css.core_0.12.101.v20170712-1547.jar">
   </scope>
@@ -109,13 +101,21 @@
   </scope>
   <scope id="bundle:org.eclipse.e4.ui.css.swt.theme" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.css.swt.theme_0.11.0.v20170312-2302.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.css.swt.theme_0.11.0.v20170312-2302.jar">
   </scope>
+  <scope id="bundle:org.eclipse.core.databinding.observable" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.databinding.observable_1.6.100.v20170515-1119.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.databinding.observable_1.6.100.v20170515-1119.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.core.databinding.property" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.databinding.property_1.6.100.v20170515-1119.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.databinding.property_1.6.100.v20170515-1119.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.e4.core.di.annotations" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di.annotations_1.6.0.v20170119-2002.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di.annotations_1.6.0.v20170119-2002.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.e4.core.di" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di_1.6.100.v20170421-1418.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di_1.6.100.v20170421-1418.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.e4.core.contexts" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.contexts_1.6.0.v20170322-1144.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.contexts_1.6.0.v20170322-1144.jar">
+  </scope>
   <scope id="bundle:org.eclipse.e4.ui.di" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.di_1.2.100.v20170414-1137.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.di_1.2.100.v20170414-1137.jar">
   </scope>
   <scope id="bundle:org.eclipse.e4.core.services" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.services_2.1.0.v20170407-0928.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.services_2.1.0.v20170407-0928.jar">
   </scope>
   <scope id="bundle:org.eclipse.e4.ui.services" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.services_1.3.0.v20170307-2032.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.services_1.3.0.v20170307-2032.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.e4.core.di.extensions" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di.extensions_0.15.0.v20170228-1728.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di.extensions_0.15.0.v20170228-1728.jar">
   </scope>
   <scope id="bundle:org.apache.commons.jxpath" location="jar:file:/${actifsource.bundle.directory}/org.apache.commons.jxpath_1.3.0.v200911051830.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.commons.jxpath_1.3.0.v200911051830.jar">
   </scope>
@@ -123,19 +123,23 @@
   </scope>
   <scope id="bundle:org.eclipse.e4.ui.model.workbench" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.model.workbench_2.0.1.v20170713-1800.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.model.workbench_2.0.1.v20170713-1800.jar">
   </scope>
-  <scope id="bundle:org.eclipse.emf.ecore.change" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore.change_2.11.0.v20170609-0707.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore.change_2.11.0.v20170609-0707.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.emf.ecore.xmi" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar">
+  <scope id="bundle:org.eclipse.e4.ui.bindings" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.bindings_0.12.1.v20170823-1632.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.bindings_0.12.1.v20170823-1632.jar">
   </scope>
   <scope id="bundle:org.eclipse.e4.core.commands" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.commands_0.12.100.v20170513-0428.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.commands_0.12.100.v20170513-0428.jar">
   </scope>
-  <scope id="bundle:org.eclipse.e4.ui.workbench" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench_1.5.1.v20170815-1446.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench_1.5.1.v20170815-1446.jar">
+  <scope id="bundle:org.eclipse.emf.ecore.xmi" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.e4.ui.workbench3" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench3_0.14.0.v20160630-0740.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench3_0.14.0.v20160630-0740.jar">
   </scope>
   <scope id="bundle:org.eclipse.e4.ui.widgets" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.widgets_1.2.0.v20160630-0736.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.widgets_1.2.0.v20160630-0736.jar">
   </scope>
-  <scope id="bundle:org.eclipse.core.databinding" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.databinding_1.6.100.v20170515-1119.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.databinding_1.6.100.v20170515-1119.jar">
+  <scope id="bundle:org.eclipse.e4.core.di.extensions" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di.extensions_0.15.0.v20170228-1728.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.core.di.extensions_0.15.0.v20170228-1728.jar">
   </scope>
-  <scope id="bundle:org.eclipse.e4.ui.bindings" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.bindings_0.12.1.v20170823-1632.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.bindings_0.12.1.v20170823-1632.jar">
+  <scope id="bundle:org.eclipse.emf.ecore.change" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore.change_2.11.0.v20170609-0707.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.emf.ecore.change_2.11.0.v20170609-0707.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.e4.ui.workbench" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench_1.5.1.v20170815-1446.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench_1.5.1.v20170815-1446.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.core.databinding" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.databinding_1.6.100.v20170515-1119.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.databinding_1.6.100.v20170515-1119.jar">
   </scope>
   <scope id="bundle:org.eclipse.jface.databinding" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jface.databinding_1.8.100.v20170503-1507.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jface.databinding_1.8.100.v20170503-1507.jar">
   </scope>
@@ -145,108 +149,91 @@
   </scope>
   <scope id="bundle:org.eclipse.e4.ui.workbench.addons.swt" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench.addons.swt_1.3.1.v20170319-1442.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.e4.ui.workbench.addons.swt_1.3.1.v20170319-1442.jar">
   </scope>
-  <scope id="bundle:org.eclipse.help" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.help_3.8.1.v20170815-1448.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.help_3.8.1.v20170815-1448.jar">
-  </scope>
   <scope id="bundle:org.eclipse.ui.workbench" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.workbench_3.110.1.v20170704-1208.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.workbench_3.110.1.v20170704-1208.jar">
   </scope>
   <scope id="bundle:org.eclipse.ui" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui_3.109.0.v20170411-1742.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui_3.109.0.v20170411-1742.jar">
   </scope>
-  <scope id="bundle:org.eclipse.equinox.p2.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.core_2.4.101.v20170906-1259.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.core_2.4.101.v20170906-1259.jar">
+  <scope id="bundle:org.eclipse.jface.text" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jface.text_3.12.2.v20180112-1341.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jface.text_3.12.2.v20180112-1341.jar">
   </scope>
-  <scope id="bundle:org.eclipse.equinox.p2.metadata" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.metadata_2.3.200.v20170511-1106.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.metadata_2.3.200.v20170511-1106.jar">
+  <scope id="bundle:org.eclipse.ui.workbench.texteditor" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.workbench.texteditor_3.10.100.v20170426-2021.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.workbench.texteditor_3.10.100.v20170426-2021.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.core.filebuffers" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.filebuffers_3.6.100.v20170203-1130.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.filebuffers_3.6.100.v20170203-1130.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.ltk.core.refactoring" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ltk.core.refactoring_3.8.0.v20170105-1156.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ltk.core.refactoring_3.8.0.v20170105-1156.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.jdt.core.manipulation" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.core.manipulation_1.9.100.v20180321-0831.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.core.manipulation_1.9.100.v20180321-0831.jar">
   </scope>
   <scope id="bundle:org.eclipse.equinox.p2.engine" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.engine_2.5.0.v20170319-2002.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.engine_2.5.0.v20170319-2002.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.osgi.services" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.osgi.services_3.6.0.v20170228-1906.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.osgi.services_3.6.0.v20170228-1906.jar">
   </scope>
   <scope id="bundle:org.eclipse.ui.views" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.views_3.9.0.v20170226-1833.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.views_3.9.0.v20170226-1833.jar">
   </scope>
   <scope id="bundle:org.eclipse.ui.forms" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.forms_3.7.101.v20170815-1446.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.forms_3.7.101.v20170815-1446.jar">
   </scope>
-  <scope id="bundle:org.eclipse.ui.ide" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.ide_3.13.1.v20170822-1526.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.ide_3.13.1.v20170822-1526.jar">
+  <scope id="bundle:org.eclipse.equinox.p2.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.core_2.4.101.v20170906-1259.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.core_2.4.101.v20170906-1259.jar">
   </scope>
-  <scope id="bundle:org.eclipse.ui.workbench.texteditor" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.workbench.texteditor_3.10.100.v20170426-2021.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.workbench.texteditor_3.10.100.v20170426-2021.jar">
+  <scope id="bundle:org.eclipse.equinox.p2.metadata" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.metadata_2.3.200.v20170511-1106.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.metadata_2.3.200.v20170511-1106.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.osgi.services" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.osgi.services_3.6.0.v20170228-1906.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.osgi.services_3.6.0.v20170228-1906.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.ui.ide" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.ide_3.13.1.v20170822-1526.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.ide_3.13.1.v20170822-1526.jar">
   </scope>
   <scope id="bundle:org.eclipse.ui.editors" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.editors_3.11.0.v20170202-1823.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.editors_3.11.0.v20170202-1823.jar">
   </scope>
-  <scope id="bundle:org.eclipse.ui.navigator" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.navigator_3.7.0.v20170418-1342.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.navigator_3.7.0.v20170418-1342.jar">
+  <scope id="bundle:com.ibm.icu" location="jar:file:/${actifsource.bundle.directory}/com.ibm.icu_58.2.0.v20170418-1837.jar!/" classpath="file:/${actifsource.bundle.directory}/com.ibm.icu_58.2.0.v20170418-1837.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.ui.console" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.console_3.7.1.v20170728-0806.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.console_3.7.1.v20170728-0806.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.debug.ui" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.debug.ui_3.12.50.v20170920-1329.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.debug.ui_3.12.50.v20170920-1329.jar">
   </scope>
   <scope id="bundle:org.eclipse.compare" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.compare_3.7.101.v20170724-1603.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.compare_3.7.101.v20170724-1603.jar">
   </scope>
+  <scope id="bundle:org.eclipse.ui.navigator" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.navigator_3.7.0.v20170418-1342.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.navigator_3.7.0.v20170418-1342.jar">
+  </scope>
   <scope id="bundle:org.eclipse.team.ui" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.team.ui_3.8.1.v20170515-1133.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.team.ui_3.8.1.v20170515-1133.jar">
   </scope>
-  <scope id="bundle:org.eclipse.ltk.core.refactoring" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ltk.core.refactoring_3.8.0.v20170105-1156.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ltk.core.refactoring_3.8.0.v20170105-1156.jar">
-  </scope>
   <scope id="bundle:org.eclipse.ltk.ui.refactoring" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ltk.ui.refactoring_3.9.0.v20170412-0825.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ltk.ui.refactoring_3.9.0.v20170412-0825.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.search" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.search_3.11.100.v20170515-1603.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.search_3.11.100.v20170515-1603.jar">
   </scope>
   <scope id="bundle:org.eclipse.ui.views.properties.tabbed" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.views.properties.tabbed_3.8.1.v20170713-0803.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.views.properties.tabbed_3.8.1.v20170713-0803.jar">
   </scope>
   <scope id="bundle:org.eclipse.ui.navigator.resources" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.navigator.resources_3.6.1.v20170823-1443.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.navigator.resources_3.6.1.v20170823-1443.jar">
   </scope>
-  <scope id="bundle:com.ibm.icu" location="jar:file:/${actifsource.bundle.directory}/com.ibm.icu_58.2.0.v20170418-1837.jar!/" classpath="file:/${actifsource.bundle.directory}/com.ibm.icu_58.2.0.v20170418-1837.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.search" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.search_3.11.100.v20170515-1603.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.search_3.11.100.v20170515-1603.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.ui.console" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.console_3.7.1.v20170728-0806.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.console_3.7.1.v20170728-0806.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.jdt.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.core_3.13.102.v20180330-0919.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.core_3.13.102.v20180330-0919.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.jdt.debug" location="${actifsource.bundle.directory}/org.eclipse.jdt.debug_3.11.50.v20170920-1717" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.debug_3.11.50.v20170920-1717/jdi.jar;file:/${actifsource.bundle.directory}/org.eclipse.jdt.debug_3.11.50.v20170920-1717/jdimodel.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.jdt.launching" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.launching_3.9.100.v20180323-1351.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.launching_3.9.100.v20180323-1351.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.debug.ui" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.debug.ui_3.12.50.v20170920-1329.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.debug.ui_3.12.50.v20170920-1329.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.jdt.core.manipulation" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.core.manipulation_1.9.100.v20180321-0831.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.core.manipulation_1.9.100.v20180321-0831.jar">
-  </scope>
   <scope id="bundle:org.eclipse.jdt.ui" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.ui_3.13.100.v20180330-0726.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.ui_3.13.100.v20180330-0726.jar">
   </scope>
   <scope id="bundle:org.eclipse.jdt.debug.ui" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.debug.ui_3.8.100.v20180322-1256.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.debug.ui_3.8.100.v20180322-1256.jar">
-  </scope>
-  <scope id="bundle:ch.actifsource.transientresource" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.transientresource_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.transientresource_${actifsource.version}.jar">
-    <resourcePath value="asrc"/>
-    <dependency ref="eclipseScope"/>
-    <dependency ref="bundle:ch.actifsource.core"/>
-  </scope>
-  <scope id="bundle:ch.actifsource.generator" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.generator_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.generator_${actifsource.version}.jar">
-    <resourcePath value="asrc"/>
-    <dependency ref="bundle:ch.actifsource.core"/>
-  </scope>
-  <scope id="bundle:ch.actifsource.platform" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.platform_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.platform_${actifsource.version}.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.equinox.frameworkadmin" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.frameworkadmin_2.0.300.v20160504-1450.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.frameworkadmin_2.0.300.v20160504-1450.jar">
   </scope>
   <scope id="bundle:org.eclipse.jdt.junit.runtime" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.junit.runtime_3.4.651.v20171130-0906.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.junit.runtime_3.4.651.v20171130-0906.jar">
   </scope>
   <scope id="bundle:org.eclipse.equinox.simpleconfigurator.manipulator" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.simpleconfigurator.manipulator_2.0.300.v20170515-0721.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.simpleconfigurator.manipulator_2.0.300.v20170515-0721.jar">
   </scope>
+  <scope id="bundle:org.eclipse.equinox.frameworkadmin" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.frameworkadmin_2.0.300.v20160504-1450.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.frameworkadmin_2.0.300.v20160504-1450.jar">
+  </scope>
   <scope id="bundle:org.eclipse.jdt.junit.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.junit.core_3.9.100.v20180321-0831.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.junit.core_3.9.100.v20180321-0831.jar">
   </scope>
   <scope id="bundle:org.eclipse.jdt.junit" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt.junit_3.10.75.v20180322-1731.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt.junit_3.10.75.v20180322-1731.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.equinox.security" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.security_1.2.300.v20170505-1235.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.security_1.2.300.v20170505-1235.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.core.net" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.net_1.3.100.v20170516-0820.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.net_1.3.100.v20170516-0820.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.draw2d" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.draw2d_3.10.100.201606061308.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.draw2d_3.10.100.201606061308.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.gef" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.gef_3.11.0.201606061308.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.gef_3.11.0.201606061308.jar">
+  </scope>
+  <scope id="bundle:ch.actifsource.eclipse.util" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.eclipse.util_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.eclipse.util_${actifsource.version}.jar">
+  </scope>
+  <scope id="bundle:ch.actifsource.ui.widget" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.widget_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.widget_${actifsource.version}.jar">
   </scope>
   <scope id="bundle:org.tukaani.xz" location="jar:file:/${actifsource.bundle.directory}/org.tukaani.xz_1.5.0.v20170111-1717.jar!/" classpath="file:/${actifsource.bundle.directory}/org.tukaani.xz_1.5.0.v20170111-1717.jar">
   </scope>
   <scope id="bundle:org.eclipse.equinox.p2.artifact.repository" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.artifact.repository_1.1.650.v20170928-1405.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.artifact.repository_1.1.650.v20170928-1405.jar">
   </scope>
-  <scope id="bundle:org.eclipse.equinox.p2.publisher" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.publisher_1.4.200.v20170511-1216.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.publisher_1.4.200.v20170511-1216.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.update.configurator" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.update.configurator_3.3.400.v20160506-0750.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.update.configurator_3.3.400.v20160506-0750.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.equinox.p2.director.app" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.director.app_1.0.500.v20160419-0834.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.director.app_1.0.500.v20160419-0834.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.equinox.p2.repository.tools" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.repository.tools_2.1.400.v20170511-1216.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.repository.tools_2.1.400.v20170511-1216.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.equinox.p2.publisher.eclipse" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.publisher.eclipse_1.2.201.v20170906-1259.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.publisher.eclipse_1.2.201.v20170906-1259.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.equinox.p2.jarprocessor" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.jarprocessor_1.0.500.v20160504-1450.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.jarprocessor_1.0.500.v20160504-1450.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.pde.build" location="${actifsource.bundle.directory}/org.eclipse.pde.build_3.9.300.v20170515-0912" classpath="file:/${actifsource.bundle.directory}/org.eclipse.pde.build_3.9.300.v20170515-0912/pdebuild.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.equinox.p2.touchpoint.eclipse" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.touchpoint.eclipse_2.1.501.v20170906-1259.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.touchpoint.eclipse_2.1.501.v20170906-1259.jar">
-  </scope>
   <scope id="bundle:org.eclipse.equinox.p2.garbagecollector" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.garbagecollector_1.0.300.v20160504-1450.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.garbagecollector_1.0.300.v20160504-1450.jar">
   </scope>
   <scope id="bundle:org.eclipse.equinox.p2.repository" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.repository_2.3.301.v20170906-1259.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.repository_2.3.301.v20170906-1259.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.equinox.p2.touchpoint.eclipse" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.touchpoint.eclipse_2.1.501.v20170906-1259.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.touchpoint.eclipse_2.1.501.v20170906-1259.jar">
   </scope>
   <scope id="bundle:org.sat4j.core" location="jar:file:/${actifsource.bundle.directory}/org.sat4j.core_2.3.5.v201308161310.jar!/" classpath="file:/${actifsource.bundle.directory}/org.sat4j.core_2.3.5.v201308161310.jar">
   </scope>
@@ -254,35 +241,31 @@
   </scope>
   <scope id="bundle:org.eclipse.equinox.p2.director" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.director_2.3.300.v20160504-1450.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.director_2.3.300.v20160504-1450.jar">
   </scope>
+  <scope id="bundle:org.eclipse.update.configurator" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.update.configurator_3.3.400.v20160506-0750.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.update.configurator_3.3.400.v20160506-0750.jar">
+  </scope>
   <scope id="bundle:org.eclipse.equinox.p2.metadata.repository" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.metadata.repository_1.2.401.v20170906-1259.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.metadata.repository_1.2.401.v20170906-1259.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.equinox.p2.publisher" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.publisher_1.4.200.v20170511-1216.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.publisher_1.4.200.v20170511-1216.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.equinox.p2.jarprocessor" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.jarprocessor_1.0.500.v20160504-1450.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.jarprocessor_1.0.500.v20160504-1450.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.equinox.p2.director.app" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.director.app_1.0.500.v20160419-0834.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.director.app_1.0.500.v20160419-0834.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.equinox.p2.publisher.eclipse" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.publisher.eclipse_1.2.201.v20170906-1259.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.publisher.eclipse_1.2.201.v20170906-1259.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.equinox.p2.repository.tools" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.repository.tools_2.1.400.v20170511-1216.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.p2.repository.tools_2.1.400.v20170511-1216.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.pde.build" location="${actifsource.bundle.directory}/org.eclipse.pde.build_3.9.300.v20170515-0912" classpath="file:/${actifsource.bundle.directory}/org.eclipse.pde.build_3.9.300.v20170515-0912/pdebuild.jar">
   </scope>
   <scope id="bundle:org.eclipse.pde.core" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.pde.core_3.11.101.v20171228-1230.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.pde.core_3.11.101.v20171228-1230.jar">
   </scope>
-  <scope id="bundle:org.eclipse.pde" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.pde_3.13.4.v20180330-0640.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.pde_3.13.4.v20180330-0640.jar">
-  </scope>
-  <scope id="bundle:ch.actifsource.eclipse.util" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.eclipse.util_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.eclipse.util_${actifsource.version}.jar">
-  </scope>
-  <scope id="bundle:ch.actifsource.environment.resourcescope" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.environment.resourcescope_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.environment.resourcescope_${actifsource.version}.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.draw2d" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.draw2d_3.10.100.201606061308.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.draw2d_3.10.100.201606061308.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.gef" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.gef_3.11.0.201606061308.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.gef_3.11.0.201606061308.jar">
-  </scope>
-  <scope id="bundle:ch.actifsource.ui.widget" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.widget_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.widget_${actifsource.version}.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.equinox.security" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.equinox.security_1.2.300.v20170505-1235.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.equinox.security_1.2.300.v20170505-1235.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.core.net" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.core.net_1.3.100.v20170516-0820.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.core.net_1.3.100.v20170516-0820.jar">
-  </scope>
-  <scope id="bundle:org.eclipse.ui.browser" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.browser_3.6.100.v20170418-1342.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.browser_3.6.100.v20170418-1342.jar">
-  </scope>
-  <scope id="bundle:org.apache.lucene.analyzers-smartcn" location="jar:file:/${actifsource.bundle.directory}/org.apache.lucene.analyzers-smartcn_6.1.0.v20161115-1612.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.lucene.analyzers-smartcn_6.1.0.v20161115-1612.jar">
+  <scope id="bundle:org.apache.lucene.analyzers-common" location="jar:file:/${actifsource.bundle.directory}/org.apache.lucene.analyzers-common_6.1.0.v20161115-1612.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.lucene.analyzers-common_6.1.0.v20161115-1612.jar">
   </scope>
   <scope id="bundle:org.apache.lucene.core" location="jar:file:/${actifsource.bundle.directory}/org.apache.lucene.core_6.1.0.v20170814-1820.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.lucene.core_6.1.0.v20170814-1820.jar">
   </scope>
   <scope id="bundle:org.apache.lucene.misc" location="jar:file:/${actifsource.bundle.directory}/org.apache.lucene.misc_6.1.0.v20161115-1612.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.lucene.misc_6.1.0.v20161115-1612.jar">
   </scope>
-  <scope id="bundle:org.apache.lucene.analyzers-common" location="jar:file:/${actifsource.bundle.directory}/org.apache.lucene.analyzers-common_6.1.0.v20161115-1612.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.lucene.analyzers-common_6.1.0.v20161115-1612.jar">
+  <scope id="bundle:org.apache.lucene.analyzers-smartcn" location="jar:file:/${actifsource.bundle.directory}/org.apache.lucene.analyzers-smartcn_6.1.0.v20161115-1612.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.lucene.analyzers-smartcn_6.1.0.v20161115-1612.jar">
   </scope>
   <scope id="bundle:org.eclipse.help.base" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.help.base_4.2.153.v20180330-0640.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.help.base_4.2.153.v20180330-0640.jar">
   </scope>
@@ -294,18 +277,35 @@
   </scope>
   <scope id="bundle:org.eclipse.jdt" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.jdt_3.13.4.v20180330-0640.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.jdt_3.13.4.v20180330-0640.jar">
   </scope>
+  <scope id="bundle:ch.actifsource.generator" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.generator_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.generator_${actifsource.version}.jar">
+    <resourcePath value="asrc"/>
+    <dependency ref="bundle:ch.actifsource.core"/>
+  </scope>
   <scope id="bundle:ch.actifsource.template" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.template_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.template_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
     <dependency ref="bundle:ch.actifsource.core"/>
     <dependency ref="bundle:ch.actifsource.generator"/>
     <dependency ref="eclipseScope"/>
   </scope>
+  <scope id="bundle:org.eclipse.pde" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.pde_3.13.4.v20180330-0640.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.pde_3.13.4.v20180330-0640.jar">
+  </scope>
+  <scope id="bundle:org.eclipse.ui.browser" location="jar:file:/${actifsource.bundle.directory}/org.eclipse.ui.browser_3.6.100.v20170418-1342.jar!/" classpath="file:/${actifsource.bundle.directory}/org.eclipse.ui.browser_3.6.100.v20170418-1342.jar">
+  </scope>
+  <scope id="bundle:ch.actifsource.transientresource" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.transientresource_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.transientresource_${actifsource.version}.jar">
+    <resourcePath value="asrc"/>
+    <dependency ref="bundle:ch.actifsource.core"/>
+    <dependency ref="eclipseScope"/>
+  </scope>
+  <scope id="bundle:ch.actifsource.platform" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.platform_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.platform_${actifsource.version}.jar">
+  </scope>
+  <scope id="bundle:ch.actifsource.environment.resourcescope" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.environment.resourcescope_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.environment.resourcescope_${actifsource.version}.jar">
+  </scope>
   <scope id="bundle:ch.actifsource.environment" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.environment_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.environment_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
     <dependency ref="eclipseScope"/>
-    <dependency ref="bundle:ch.actifsource.core"/>
-    <dependency ref="bundle:ch.actifsource.generator"/>
     <dependency ref="bundle:ch.actifsource.template"/>
+    <dependency ref="bundle:ch.actifsource.generator"/>
+    <dependency ref="bundle:ch.actifsource.core"/>
   </scope>
   <scope id="bundle:ch.actifsource.ui.junit" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.junit_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.junit_${actifsource.version}.jar">
   </scope>
@@ -315,11 +315,6 @@
   </scope>
   <scope id="bundle:ch.actifsource.core.testutil" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.core.testutil_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.core.testutil_${actifsource.version}.jar">
   </scope>
-  <scope id="bundle:ch.actifsource.ui.search" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.search_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.search_${actifsource.version}.jar">
-    <resourcePath value="asrc"/>
-    <dependency ref="eclipseScope"/>
-    <dependency ref="bundle:ch.actifsource.environment"/>
-  </scope>
   <scope id="bundle:ch.actifsource.ui.validator" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.validator_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.validator_${actifsource.version}.jar">
   </scope>
   <scope id="bundle:ch.actifsource.contenttype" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.contenttype_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.contenttype_${actifsource.version}.jar">
@@ -328,17 +323,22 @@
   </scope>
   <scope id="bundle:ch.actifsource.ui.elementtexteditor" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.elementtexteditor_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.elementtexteditor_${actifsource.version}.jar">
   </scope>
-  <scope id="bundle:ch.actifsource.ui.wizard.generic" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.wizard.generic_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.wizard.generic_${actifsource.version}.jar">
-    <resourcePath value="asrc"/>
-    <dependency ref="eclipseScope"/>
-    <dependency ref="bundle:ch.actifsource.generator"/>
-    <dependency ref="bundle:ch.actifsource.template"/>
-    <dependency ref="bundle:ch.actifsource.environment"/>
-  </scope>
   <scope id="bundle:ch.actifsource.ui.component" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.component_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.component_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
     <dependency ref="eclipseScope"/>
     <dependency ref="bundle:ch.actifsource.environment"/>
+  </scope>
+  <scope id="bundle:ch.actifsource.ui.search" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.search_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.search_${actifsource.version}.jar">
+    <resourcePath value="asrc"/>
+    <dependency ref="bundle:ch.actifsource.environment"/>
+    <dependency ref="eclipseScope"/>
+  </scope>
+  <scope id="bundle:ch.actifsource.ui.wizard.generic" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.wizard.generic_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.wizard.generic_${actifsource.version}.jar">
+    <resourcePath value="asrc"/>
+    <dependency ref="eclipseScope"/>
+    <dependency ref="bundle:ch.actifsource.environment"/>
+    <dependency ref="bundle:ch.actifsource.generator"/>
+    <dependency ref="bundle:ch.actifsource.template"/>
   </scope>
   <scope id="bundle:ch.actifsource.ui.refactoring" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.refactoring_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.refactoring_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
@@ -347,38 +347,49 @@
   </scope>
   <scope id="bundle:ch.actifsource.ui.templateeditor" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.templateeditor_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.templateeditor_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
-    <dependency ref="bundle:ch.actifsource.ui.search"/>
     <dependency ref="eclipseScope"/>
-    <dependency ref="bundle:ch.actifsource.ui.wizard.generic"/>
-    <dependency ref="bundle:ch.actifsource.generator"/>
-    <dependency ref="bundle:ch.actifsource.ui.component"/>
-    <dependency ref="bundle:ch.actifsource.ui.refactoring"/>
     <dependency ref="bundle:ch.actifsource.template"/>
+    <dependency ref="bundle:ch.actifsource.ui.search"/>
+    <dependency ref="bundle:ch.actifsource.ui.component"/>
     <dependency ref="bundle:ch.actifsource.environment"/>
+    <dependency ref="bundle:ch.actifsource.generator"/>
+    <dependency ref="bundle:ch.actifsource.ui.wizard.generic"/>
+    <dependency ref="bundle:ch.actifsource.ui.refactoring"/>
   </scope>
   <scope id="bundle:ch.actifsource.ui.builder" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.builder_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.builder_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
-    <dependency ref="eclipseScope"/>
-    <dependency ref="bundle:ch.actifsource.ui.templateeditor"/>
-    <dependency ref="bundle:ch.actifsource.environment"/>
     <dependency ref="bundle:ch.actifsource.ui.component"/>
+    <dependency ref="eclipseScope"/>
+    <dependency ref="bundle:ch.actifsource.environment"/>
+    <dependency ref="bundle:ch.actifsource.ui.templateeditor"/>
   </scope>
   <scope id="bundle:ch.actifsource.ui.editor" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.ui.editor_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ui.editor_${actifsource.version}.jar">
   </scope>
   <scope id="bundle:ch.actifsource.model.updater" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.model.updater_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.model.updater_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
-    <dependency ref="bundle:ch.actifsource.transientresource"/>
     <dependency ref="bundle:ch.actifsource.core"/>
+    <dependency ref="bundle:ch.actifsource.transientresource"/>
   </scope>
   <scope id="bundle:org.apache.commons.lang" location="jar:file:/${actifsource.bundle.directory}/org.apache.commons.lang_2.6.0.v201404270220.jar!/" classpath="file:/${actifsource.bundle.directory}/org.apache.commons.lang_2.6.0.v201404270220.jar">
   </scope>
   <scope id="bundle:ch.actifsource.codesnippet.metamodel" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.codesnippet.metamodel_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.codesnippet.metamodel_${actifsource.version}.jar">
     <resourcePath value="asrc"/>
-    <dependency ref="bundle:ch.actifsource.transientresource"/>
     <dependency ref="bundle:ch.actifsource.core"/>
-    <dependency ref="bundle:ch.actifsource.template"/>
     <dependency ref="bundle:ch.actifsource.generator"/>
     <dependency ref="eclipseScope"/>
+    <dependency ref="bundle:ch.actifsource.transientresource"/>
+    <dependency ref="bundle:ch.actifsource.template"/>
+  </scope>
+  <scope id="bundle:ch.actifsource.javamodel" location="jar:file:/${actifsource.bundle.directory}/ch.actifsource.javamodel_${actifsource.version}.jar!/" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.javamodel_${actifsource.version}.jar">
+    <resourcePath value="asrc"/>
+    <dependency ref="bundle:ch.actifsource.core"/>
+    <dependency ref="bundle:ch.actifsource.generator"/>
+    <dependency ref="bundle:ch.actifsource.environment"/>
+    <dependency ref="bundle:ch.actifsource.template"/>
+  </scope>
+  <scope id="bundle:org.apache.ant" location="${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840" classpath="file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-antlr.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-bcel.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-bsf.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-log4j.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-oro.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-regexp.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-resolver.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-xalan2.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-commons-logging.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-commons-net.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-jai.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-javamail.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-jdepend.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-jmf.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-jsch.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-junit.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-junit4.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-launcher.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-netrexx.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-swing.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant-testutil.jar;file:/${actifsource.bundle.directory}/org.apache.ant_1.10.1.v20170504-0840/lib/ant.jar">
+  </scope>
+  <scope id="bundle:ch.actifsource.ant" location="${actifsource.bundle.directory}/ch.actifsource.ant_${actifsource.version}" classpath="file:/${actifsource.bundle.directory}/ch.actifsource.ant_${actifsource.version}/">
   </scope>
   <scope id="project:ch.actifsource.example.ant" location="file:/${workspaceroot}/ch.actifsource.example.ant" classpath="file:/${workspaceroot}/ch.actifsource.example.ant/bin/">
     <resourcePath value="asrc"/>
@@ -393,151 +404,151 @@
 
   <environment id="env">
     <scope ref="eclipseScope" />
-    <scope ref="bundle:org.eclipse.osgi" />
     <scope ref="bundle:ch.actifsource.libs_external" />
-    <scope ref="bundle:ch.actifsource.util" />
+    <scope ref="bundle:org.eclipse.osgi" />
     <scope ref="bundle:org.eclipse.equinox.common" />
-    <scope ref="bundle:org.eclipse.equinox.registry" />
-    <scope ref="bundle:org.eclipse.equinox.app" />
     <scope ref="bundle:org.eclipse.core.jobs" />
+    <scope ref="bundle:org.eclipse.equinox.registry" />
     <scope ref="bundle:org.eclipse.equinox.preferences" />
     <scope ref="bundle:org.eclipse.core.contenttype" />
+    <scope ref="bundle:org.eclipse.equinox.app" />
     <scope ref="bundle:javax.inject" />
     <scope ref="bundle:org.eclipse.core.runtime" />
+    <scope ref="bundle:ch.actifsource.util" />
     <scope ref="bundle:ch.actifsource.core" />
     <scope ref="bundle:org.hamcrest.core" />
     <scope ref="bundle:org.junit" />
     <scope ref="bundle:org.eclipse.core.variables" />
-    <scope ref="bundle:org.eclipse.core.filesystem" />
-    <scope ref="bundle:org.eclipse.core.expressions" />
     <scope ref="bundle:org.eclipse.ant.core" />
+    <scope ref="bundle:org.eclipse.core.expressions" />
+    <scope ref="bundle:org.eclipse.core.filesystem" />
     <scope ref="bundle:org.eclipse.core.resources" />
     <scope ref="bundle:org.eclipse.debug.core" />
     <scope ref="bundle:org.eclipse.core.commands" />
     <scope ref="bundle:org.eclipse.text" />
-    <scope ref="bundle:org.eclipse.core.filebuffers" />
+    <scope ref="bundle:org.eclipse.compare.core" />
+    <scope ref="bundle:org.eclipse.team.core" />
+    <scope ref="bundle:org.eclipse.jdt.core" />
+    <scope ref="bundle:org.eclipse.jdt.debug" />
+    <scope ref="bundle:org.eclipse.jdt.launching" />
     <scope ref="bundle:org.eclipse.swt" />
     <scope ref="bundle:org.eclipse.equinox.bidi" />
     <scope ref="bundle:org.eclipse.jface" />
-    <scope ref="bundle:org.eclipse.jface.text" />
-    <scope ref="bundle:org.eclipse.compare.core" />
-    <scope ref="bundle:org.eclipse.team.core" />
-    <scope ref="bundle:org.eclipse.e4.core.di.annotations" />
-    <scope ref="bundle:org.eclipse.e4.core.di" />
-    <scope ref="bundle:org.eclipse.core.databinding.observable" />
-    <scope ref="bundle:org.eclipse.core.databinding.property" />
-    <scope ref="bundle:org.eclipse.e4.ui.workbench3" />
+    <scope ref="bundle:org.eclipse.help" />
     <scope ref="bundle:org.eclipse.emf.common" />
     <scope ref="bundle:org.eclipse.emf.ecore" />
-    <scope ref="bundle:org.eclipse.e4.core.contexts" />
-    <scope ref="bundle:org.apache.batik.css" />
     <scope ref="bundle:org.w3c.css.sac" />
+    <scope ref="bundle:org.apache.batik.css" />
     <scope ref="bundle:org.eclipse.e4.ui.css.core" />
     <scope ref="bundle:org.eclipse.e4.ui.css.swt" />
     <scope ref="bundle:org.eclipse.e4.ui.css.swt.theme" />
+    <scope ref="bundle:org.eclipse.core.databinding.observable" />
+    <scope ref="bundle:org.eclipse.core.databinding.property" />
+    <scope ref="bundle:org.eclipse.e4.core.di.annotations" />
+    <scope ref="bundle:org.eclipse.e4.core.di" />
+    <scope ref="bundle:org.eclipse.e4.core.contexts" />
     <scope ref="bundle:org.eclipse.e4.ui.di" />
     <scope ref="bundle:org.eclipse.e4.core.services" />
     <scope ref="bundle:org.eclipse.e4.ui.services" />
-    <scope ref="bundle:org.eclipse.e4.core.di.extensions" />
     <scope ref="bundle:org.apache.commons.jxpath" />
     <scope ref="bundle:org.eclipse.e4.emf.xpath" />
     <scope ref="bundle:org.eclipse.e4.ui.model.workbench" />
-    <scope ref="bundle:org.eclipse.emf.ecore.change" />
-    <scope ref="bundle:org.eclipse.emf.ecore.xmi" />
-    <scope ref="bundle:org.eclipse.e4.core.commands" />
-    <scope ref="bundle:org.eclipse.e4.ui.workbench" />
-    <scope ref="bundle:org.eclipse.e4.ui.widgets" />
-    <scope ref="bundle:org.eclipse.core.databinding" />
     <scope ref="bundle:org.eclipse.e4.ui.bindings" />
+    <scope ref="bundle:org.eclipse.e4.core.commands" />
+    <scope ref="bundle:org.eclipse.emf.ecore.xmi" />
+    <scope ref="bundle:org.eclipse.e4.ui.workbench3" />
+    <scope ref="bundle:org.eclipse.e4.ui.widgets" />
+    <scope ref="bundle:org.eclipse.e4.core.di.extensions" />
+    <scope ref="bundle:org.eclipse.emf.ecore.change" />
+    <scope ref="bundle:org.eclipse.e4.ui.workbench" />
+    <scope ref="bundle:org.eclipse.core.databinding" />
     <scope ref="bundle:org.eclipse.jface.databinding" />
     <scope ref="bundle:org.eclipse.e4.ui.workbench.swt" />
     <scope ref="bundle:org.eclipse.e4.ui.workbench.renderers.swt" />
     <scope ref="bundle:org.eclipse.e4.ui.workbench.addons.swt" />
-    <scope ref="bundle:org.eclipse.help" />
     <scope ref="bundle:org.eclipse.ui.workbench" />
     <scope ref="bundle:org.eclipse.ui" />
-    <scope ref="bundle:org.eclipse.equinox.p2.core" />
-    <scope ref="bundle:org.eclipse.equinox.p2.metadata" />
+    <scope ref="bundle:org.eclipse.jface.text" />
+    <scope ref="bundle:org.eclipse.ui.workbench.texteditor" />
+    <scope ref="bundle:org.eclipse.core.filebuffers" />
+    <scope ref="bundle:org.eclipse.ltk.core.refactoring" />
+    <scope ref="bundle:org.eclipse.jdt.core.manipulation" />
     <scope ref="bundle:org.eclipse.equinox.p2.engine" />
-    <scope ref="bundle:org.eclipse.osgi.services" />
     <scope ref="bundle:org.eclipse.ui.views" />
     <scope ref="bundle:org.eclipse.ui.forms" />
+    <scope ref="bundle:org.eclipse.equinox.p2.core" />
+    <scope ref="bundle:org.eclipse.equinox.p2.metadata" />
+    <scope ref="bundle:org.eclipse.osgi.services" />
     <scope ref="bundle:org.eclipse.ui.ide" />
-    <scope ref="bundle:org.eclipse.ui.workbench.texteditor" />
     <scope ref="bundle:org.eclipse.ui.editors" />
-    <scope ref="bundle:org.eclipse.ui.navigator" />
+    <scope ref="bundle:com.ibm.icu" />
+    <scope ref="bundle:org.eclipse.ui.console" />
+    <scope ref="bundle:org.eclipse.debug.ui" />
     <scope ref="bundle:org.eclipse.compare" />
+    <scope ref="bundle:org.eclipse.ui.navigator" />
     <scope ref="bundle:org.eclipse.team.ui" />
-    <scope ref="bundle:org.eclipse.ltk.core.refactoring" />
     <scope ref="bundle:org.eclipse.ltk.ui.refactoring" />
+    <scope ref="bundle:org.eclipse.search" />
     <scope ref="bundle:org.eclipse.ui.views.properties.tabbed" />
     <scope ref="bundle:org.eclipse.ui.navigator.resources" />
-    <scope ref="bundle:com.ibm.icu" />
-    <scope ref="bundle:org.eclipse.search" />
-    <scope ref="bundle:org.eclipse.ui.console" />
-    <scope ref="bundle:org.eclipse.jdt.core" />
-    <scope ref="bundle:org.eclipse.jdt.debug" />
-    <scope ref="bundle:org.eclipse.jdt.launching" />
-    <scope ref="bundle:org.eclipse.debug.ui" />
-    <scope ref="bundle:org.eclipse.jdt.core.manipulation" />
     <scope ref="bundle:org.eclipse.jdt.ui" />
     <scope ref="bundle:org.eclipse.jdt.debug.ui" />
-    <scope ref="bundle:ch.actifsource.transientresource" />
-    <scope ref="bundle:ch.actifsource.generator" />
-    <scope ref="bundle:ch.actifsource.platform" />
-    <scope ref="bundle:org.eclipse.equinox.frameworkadmin" />
     <scope ref="bundle:org.eclipse.jdt.junit.runtime" />
     <scope ref="bundle:org.eclipse.equinox.simpleconfigurator.manipulator" />
+    <scope ref="bundle:org.eclipse.equinox.frameworkadmin" />
     <scope ref="bundle:org.eclipse.jdt.junit.core" />
     <scope ref="bundle:org.eclipse.jdt.junit" />
+    <scope ref="bundle:org.eclipse.equinox.security" />
+    <scope ref="bundle:org.eclipse.core.net" />
+    <scope ref="bundle:org.eclipse.draw2d" />
+    <scope ref="bundle:org.eclipse.gef" />
+    <scope ref="bundle:ch.actifsource.eclipse.util" />
+    <scope ref="bundle:ch.actifsource.ui.widget" />
     <scope ref="bundle:org.tukaani.xz" />
     <scope ref="bundle:org.eclipse.equinox.p2.artifact.repository" />
-    <scope ref="bundle:org.eclipse.equinox.p2.publisher" />
-    <scope ref="bundle:org.eclipse.update.configurator" />
-    <scope ref="bundle:org.eclipse.equinox.p2.director.app" />
-    <scope ref="bundle:org.eclipse.equinox.p2.repository.tools" />
-    <scope ref="bundle:org.eclipse.equinox.p2.publisher.eclipse" />
-    <scope ref="bundle:org.eclipse.equinox.p2.jarprocessor" />
-    <scope ref="bundle:org.eclipse.pde.build" />
-    <scope ref="bundle:org.eclipse.equinox.p2.touchpoint.eclipse" />
     <scope ref="bundle:org.eclipse.equinox.p2.garbagecollector" />
     <scope ref="bundle:org.eclipse.equinox.p2.repository" />
+    <scope ref="bundle:org.eclipse.equinox.p2.touchpoint.eclipse" />
     <scope ref="bundle:org.sat4j.core" />
     <scope ref="bundle:org.sat4j.pb" />
     <scope ref="bundle:org.eclipse.equinox.p2.director" />
+    <scope ref="bundle:org.eclipse.update.configurator" />
     <scope ref="bundle:org.eclipse.equinox.p2.metadata.repository" />
+    <scope ref="bundle:org.eclipse.equinox.p2.publisher" />
+    <scope ref="bundle:org.eclipse.equinox.p2.jarprocessor" />
+    <scope ref="bundle:org.eclipse.equinox.p2.director.app" />
+    <scope ref="bundle:org.eclipse.equinox.p2.publisher.eclipse" />
+    <scope ref="bundle:org.eclipse.equinox.p2.repository.tools" />
+    <scope ref="bundle:org.eclipse.pde.build" />
     <scope ref="bundle:org.eclipse.pde.core" />
-    <scope ref="bundle:org.eclipse.pde" />
-    <scope ref="bundle:ch.actifsource.eclipse.util" />
-    <scope ref="bundle:ch.actifsource.environment.resourcescope" />
-    <scope ref="bundle:org.eclipse.draw2d" />
-    <scope ref="bundle:org.eclipse.gef" />
-    <scope ref="bundle:ch.actifsource.ui.widget" />
-    <scope ref="bundle:org.eclipse.equinox.security" />
-    <scope ref="bundle:org.eclipse.core.net" />
-    <scope ref="bundle:org.eclipse.ui.browser" />
-    <scope ref="bundle:org.apache.lucene.analyzers-smartcn" />
+    <scope ref="bundle:org.apache.lucene.analyzers-common" />
     <scope ref="bundle:org.apache.lucene.core" />
     <scope ref="bundle:org.apache.lucene.misc" />
-    <scope ref="bundle:org.apache.lucene.analyzers-common" />
+    <scope ref="bundle:org.apache.lucene.analyzers-smartcn" />
     <scope ref="bundle:org.eclipse.help.base" />
     <scope ref="bundle:org.eclipse.ui.intro" />
     <scope ref="bundle:org.eclipse.help.ui" />
     <scope ref="bundle:org.eclipse.ui.cheatsheets" />
     <scope ref="bundle:org.eclipse.jdt" />
+    <scope ref="bundle:ch.actifsource.generator" />
     <scope ref="bundle:ch.actifsource.template" />
+    <scope ref="bundle:org.eclipse.pde" />
+    <scope ref="bundle:org.eclipse.ui.browser" />
+    <scope ref="bundle:ch.actifsource.transientresource" />
+    <scope ref="bundle:ch.actifsource.platform" />
+    <scope ref="bundle:ch.actifsource.environment.resourcescope" />
     <scope ref="bundle:ch.actifsource.environment" />
     <scope ref="bundle:ch.actifsource.ui.junit" />
     <scope ref="bundle:org.objectweb.asm" />
     <scope ref="bundle:ch.actifsource.testutil" />
     <scope ref="bundle:ch.actifsource.core.testutil" />
-    <scope ref="bundle:ch.actifsource.ui.search" />
     <scope ref="bundle:ch.actifsource.ui.validator" />
     <scope ref="bundle:ch.actifsource.contenttype" />
     <scope ref="bundle:ch.actifsource.ui.generator" />
     <scope ref="bundle:ch.actifsource.ui.elementtexteditor" />
-    <scope ref="bundle:ch.actifsource.ui.wizard.generic" />
     <scope ref="bundle:ch.actifsource.ui.component" />
+    <scope ref="bundle:ch.actifsource.ui.search" />
+    <scope ref="bundle:ch.actifsource.ui.wizard.generic" />
     <scope ref="bundle:ch.actifsource.ui.refactoring" />
     <scope ref="bundle:ch.actifsource.ui.templateeditor" />
     <scope ref="bundle:ch.actifsource.ui.builder" />
@@ -545,12 +556,15 @@
     <scope ref="bundle:ch.actifsource.model.updater" />
     <scope ref="bundle:org.apache.commons.lang" />
     <scope ref="bundle:ch.actifsource.codesnippet.metamodel" />
+    <scope ref="bundle:ch.actifsource.javamodel" />
+    <scope ref="bundle:org.apache.ant" />
+    <scope ref="bundle:ch.actifsource.ant" />
     <scope ref="project:ch.actifsource.example.ant" />
     <generator ref="generator:ch.actifsource.template.generator.TemplateGeneratorTaskFactory"/>
   </environment>
 
   <target name="code-gen">    
-    <generate verbose="true" resourcescope="project:ch.actifsource.example.ant" buildConfig="ch.actifsource.example.ant.template.TestBuildConfig" outputroot="${actifsource.project.directory}/ch.actifsource.example.ant/code-gen">
+    <generate resourcescope="project:ch.actifsource.example.ant" buildConfig="ch.actifsource.example.ant.template.TestBuildConfig" outputroot="${actifsource.project.directory}/ch.actifsource.example.ant/code-gen">
       <environment ref="env" />
     </generate>
   </target>

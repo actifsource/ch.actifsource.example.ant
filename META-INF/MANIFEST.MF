@@ -16,4 +16,5 @@ Require-Bundle: ch.actifsource.core;bundle-version="10.10.0",
  ch.actifsource.ui.editor;bundle-version="10.10.0",
  ch.actifsource.transientresource;bundle-version="10.12.0",
  ch.actifsource.model.updater;bundle-version="11.0.0",
- ch.actifsource.codesnippet.metamodel;bundle-version="11.0.0"
+ ch.actifsource.codesnippet.metamodel;bundle-version="11.0.0",
+ ch.actifsource.ant;bundle-version="11.3.1"
