@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<project default="build" basedir=".">
+
+  <!-- Define the workspace root folder. No projects from this folder are included inside the platform use 'ch.actifsource.antdetect.projectFiles'. -->
+  <!-- Example: 'D:/WORKBENCH/New_configuration' -->
+  <property name="ch.actifsource.platform.workspaceRootFolder" value="D:/Eclipse/WORKBENCH/WORKBENCH_GITHUB"/>
+  <!-- Define the bundle directories and include all bundles recursive from this directories. -->
+  <!-- Example: 'D:/eclipse/plugins;C:\Users\.m2\repo\p2\osgi\bundle' -->
+  <property name="ch.actifsource.antdetect.bundleFolders" value="D:\Eclipse\eclipse-rcp-2022-12-R-win32-x86_64 - Kopie\eclipse\plugins"/>
+  <!-- Define the bundle files. -->
+  <!-- Example: 'D:/eclipse/plugins/bundle1.jar;D:/eclipse/plugins/bundle2.jar' -->
+  <property name="ch.actifsource.antdetect.bundleFiles" value="" />
+  <!-- Define the project directories and include all projects recursive from this directories. -->
+  <!-- Example: 'D:/WORKBENCH/New_configuration1;D:/WORKBENCH/New_configuration2' -->
+  <property name="ch.actifsource.antdetect.projectFolders" value="D:/Eclipse/WORKBENCH/WORKBENCH_GITHUB"/>
+  <!-- Define the project files. -->
+  <!-- Example: 'D:/WORKBENCH/New_configuration/projectA;D:/WORKBENCH/New_configuration/projectA' -->
+  <property name="ch.actifsource.antdetect.projectFiles" value="" />
+  <!-- Define the projects classes output folder. Relative to the project path. -->
+  <!-- Example: 'bin' or 'target/classes' -->
+  <property name="ch.actifsource.antdetect.projectClassesOutput" value="bin" />
+
+  <!-- BEGIN - LATEST ANT-PLUGIN-DIR FOR TASK-DETECTION -->
+  <last id="ch.actifsource.ant.latest.id">
+   <sort>
+     <date xmlns="antlib:org.apache.tools.ant.types.resources.comparators"/>
+    <dirset id="ch.actifsource.ant.set" dir="${ch.actifsource.antdetect.bundleFolders}" includes="ch.actifsource.ant_*"/>  
+   </sort>
+  </last>
+  <property name="ch.actifsource.ant.latest" refId="ch.actifsource.ant.latest.id"/>
+  <echo message="Launch detector in ${ch.actifsource.ant.latest}"/>
+  <!-- END LATEST ANT-PLUGIN-DIR FOR TASK-DETECTION -->
+  
+  <!-- Load the detect.xml file from the latest ch.actifsource.ant bundle. -->
+  <import file="${ch.actifsource.ant.latest}/actifsource.tasks.detect.xml" />
+  
+  <!-- Export classpath file. -->
+  <target name="export-classpath">    
+    <!-- Exportdependency additional properties: classpathproperty="classpath.property" classpathmapproperty="classpathmap.property" dependencytreeproperty="dependencytree.property" classpathseparator=";" classpathfile="D:\Eclipse\WORKBENCH\classpath.txt" classpathmapfile="D:\Eclipse\WORKBENCH\classpathmapfile.txt" dependencytreefile="D:\Eclipse\WORKBENCH\dependencytree.txt" -->
+    <exportdependency verbose="false" resourcescope="project:ch.actifsource.example.ant" classpathproperty="project.classpath">
+      <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${ch.actifsource.platform.workspaceRootFolder}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFolders" value="${ch.actifsource.antdetect.bundleFolders}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFiles" value="${ch.actifsource.antdetect.bundleFiles}"/>
+      <sysproperty key="ch.actifsource.platform.projectFolders" value="${ch.actifsource.antdetect.projectFolders}"/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value="${ch.actifsource.antdetect.projectFiles}"/>
+      <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${ch.actifsource.antdetect.projectClassesOutput}"/>
+    </exportdependency>
+  </target>
+
+  <!-- Compile project. -->
+  <property name="debuglevel" value="source,lines,vars"/>
+  <property name="target" value="17"/>
+  <property name="source" value="17"/>
+  	
+  <target name="cleanbin">
+    <delete dir="bin"/>
+  </target>  	            	
+  <target name="initbin">
+    <mkdir dir="bin"/>
+  </target>           	          	
+  <target depends="cleanbin,initbin" name="compile-project">
+    <echo message="classpath: ${project.classpath}"/>
+    <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" verbose="true" source="${source}" target="${target}">
+      <src path="src-gen"/>
+      <!-- <src path="src"/> -->
+      <compilerarg  value="-cp"/>
+      <compilerarg value="${project.classpath}" />
+    </javac>
+  </target>
+  
+  <target name="project-validation">    
+    <!-- Validate2 additional properties: exceptiontype="error,warning,info" validationproperty="validation.property" validationfilepath="D:\Eclipse\WORKBENCH\validation.csv" -->
+    <validate2 verbose="false" threadcapacity="1" resourcescope="project:ch.actifsource.example.ant" exceptiontype="error">
+      <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${ch.actifsource.platform.workspaceRootFolder}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFolders" value="${ch.actifsource.antdetect.bundleFolders}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFiles" value="${ch.actifsource.antdetect.bundleFiles}"/>
+      <sysproperty key="ch.actifsource.platform.projectFolders" value="${ch.actifsource.antdetect.projectFolders}"/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value="${ch.actifsource.antdetect.projectFiles}"/>
+      <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${ch.actifsource.antdetect.projectClassesOutput}"/>
+    </validate2>
+  </target>
+  
+  <target name="code-gen">    
+    <generate2 threadcapacity="1" verbose="false" resourcescope="project:ch.actifsource.example.ant" buildConfig="ch.actifsource.example.ant.template.TestBuildConfig" outputroot="${actifsource.project.directory}/ch.actifsource.example.ant/code-gen">
+      <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${ch.actifsource.platform.workspaceRootFolder}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFolders" value="${ch.actifsource.antdetect.bundleFolders}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFiles" value="${ch.actifsource.antdetect.bundleFiles}"/>
+      <sysproperty key="ch.actifsource.platform.projectFolders" value="${ch.actifsource.antdetect.projectFolders}"/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value="${ch.actifsource.antdetect.projectFiles}"/>
+      <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${ch.actifsource.antdetect.projectClassesOutput}"/>
+    </generate2>
+  </target>
+  
+  
+  <target name="build" depends="export-classpath,compile-project,project-validation,code-gen"/>
+</project>

@@ -6,7 +6,7 @@
   <property name="ch.actifsource.platform.workspaceRootFolder" value="D:/Eclipse/WORKBENCH/WORKBENCH_GITHUB"/>
   <!-- Define the bundle directories and include all bundles recursive from this directories. -->
   <!-- Example: 'D:/eclipse/plugins;C:\Users\.m2\repo\p2\osgi\bundle' -->
-  <property name="ch.actifsource.antdetect.bundleFolders" value="D:\Eclipse\eclipse-rcp-oxygen-3a-win32-x86_64\eclipse\plugins"/>
+  <property name="ch.actifsource.antdetect.bundleFolders" value="D:\Eclipse\eclipse-rcp-2022-12-R-win32-x86_64 - Kopie\eclipse\plugins"/>
   <!-- Define the bundle files. -->
   <!-- Example: 'D:/eclipse/plugins/bundle1.jar;D:/eclipse/plugins/bundle2.jar' -->
   <property name="ch.actifsource.antdetect.bundleFiles" value="" />
