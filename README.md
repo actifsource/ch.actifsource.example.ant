@@ -3,27 +3,43 @@ In this project we will show how to set up the ant build.
 
 ## asbuild.config.xml
 
-Define the ant config inside the asbild.config.xml:
+Define the ant config inside the asbild.dynamc.loading.xy.xml:
 
 ```xml
-<property name="actifsource.version" value="10.10.0.202005121415" />
-<property name="bundle.directory" value="D:\Eclipse\eclipse-rcp-oxygen-3a-win32-x86_64\eclipse\plugins" />
-<property name="ant.workspace" value="${basedir}/.." />
-<property name="ant.project" value="${ant.workspace}/ch.actifsource.example.ant" />
-<property name="junit.test.report" value="${ant.project}/reports" />
+  <!-- Define the workspace root folder. No projects from this folder are included inside the platform use 'ch.actifsource.antdetect.projectFiles'. -->
+  <!-- Example: 'D:/WORKBENCH/New_configuration' -->
+  <property name="ch.actifsource.platform.workspaceRootFolder" value="D:/Eclipse/WORKBENCH/WORKBENCH_GITHUB"/>
+  <!-- Define the bundle directories and include all bundles recursive from this directories. -->
+  <!-- Example: 'D:/eclipse/plugins;C:\Users\.m2\repo\p2\osgi\bundle' -->
+  <property name="ch.actifsource.antdetect.bundleFolders" value="D:\Eclipse\eclipse-rcp-2022-12-R-win32-x86_64\eclipse\plugins"/>
+  <!-- Define the bundle files. -->
+  <!-- Example: 'D:/eclipse/plugins/bundle1.jar;D:/eclipse/plugins/bundle2.jar' -->
+  <property name="ch.actifsource.antdetect.bundleFiles" value="" />
+  <!-- Define the project directories and include all projects recursive from this directories. -->
+  <!-- Example: 'D:/WORKBENCH/New_configuration1;D:/WORKBENCH/New_configuration2' -->
+  <property name="ch.actifsource.antdetect.projectFolders" value="D:/Eclipse/WORKBENCH/WORKBENCH_GITHUB"/>
+  <!-- Define the project files. -->
+  <!-- Example: 'D:/WORKBENCH/New_configuration/projectA;D:/WORKBENCH/New_configuration/projectA' -->
+  <property name="ch.actifsource.antdetect.projectFiles" value="" />
+  <!-- Define the projects classes output folder. Relative to the project path. -->
+  <!-- Example: 'bin' or 'target/classes' -->
+  <property name="ch.actifsource.antdetect.projectClassesOutput" value="bin" />
 ```
 
 ## Run Ant
-![Diagram](images/runant.png)
+![exportant-generator-2](images/exportant-generator-2.png)
+
+![exportant-generator-3](images/exportant-generator-3.png)
+
+![exportant-generator-4](images/exportant-generator-4.png)
 
 * The ant script 'asbuild.unittest.xml' is used to execute the junit test. 
 
-## Export Ant to Generate BuildConfig
-![Diagram](images/exportant2.png)
+## Export Ant to Generate Project
 
-![Diagram](images/exportant1.png)
+The corresponding Ant file can be generated automatically via Project Explorer 'Export->Actifsource->Ant BuildFiel Export':
 
-![Diagram](images/exportant3.png)
+![exportant-generator-1](images/exportant-generator-1.png)
 
 
 ## Export Ant to Validate Project
